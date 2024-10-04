@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --width-progect: 1440px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: inline-flex;
+    border-radius: 44px;
+    background-color: white;
+    justify-content: space-between;
+    width: var(--width-progect);
+    padding: 30px 40px 30px 40px;
+}
+
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    p {
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.nftAccess {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 56px;
+    padding-top: 150px;
+    margin-left: 140px;
+
+}
+
+.infoContent {
+
+    h1 {
+        color: #344054;
+        font-size: 40px;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+
+    p {
+        color: #667085;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+}
+
+table {
+    display: flex;
+    align-items: start;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+label {
+    color: #344054;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+input[type=email],
+input[type=password] {
+    padding: 10px 14px;
+    width: 330px;
+    /*color: #667085;*/
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+
+}
+
+.secondLineTable, .checkBoxLine, .btnGoogles {
+    padding-top: 20px;
+}
+
+.checkBoxLine {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+.rememberMe {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+
+
+.btn {
+    width: 100%;
+    margin-top: 36px;
+    /*gap: 10px;*/
+
+    button {
+        padding: 12px 154px;
+        background-color: #5429FF;
+        border: none;
+        border-radius: 8px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+
+.size-forBtnGoogle {
+    width: 100%;
+}
+
+.btnGoogle {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 90px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: #FFF;
+}
+
+.newAccount {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    p {
+        color:  #344054;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.footer {
+    padding-top: 160px;
+    color: #667085;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.image {
+    border-radius: 40px;
+    width: 736px;
+    height: 865px;
+    background-color: #CBCCE8;
+}
