@@ -1,5 +1,6 @@
 import './style.css'
 import { setupCounter } from './counter.ts'
+import './settings.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <!DOCTYPE html>
@@ -7,7 +8,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="Sing-in.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
@@ -21,7 +22,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <h1>NFT Access</h1>
                 <p>Please fill your detail to access your account.</p>
             </div>
-            <form action="" method="post">
+            <form id="loginForm" action="" method="get">
                 <table>
                     <tr>
                         <th><label for="email">Email</label></th>
@@ -40,12 +41,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </tr>
                     <tr class="btn">
                         <th>
-                            <button>Sing in</button>
+                            <button type="button" id="singup-sumbmit">Sing in</button>
                         </th>
                     </tr>
                     <tr class="btnGoogles">
                         <th class="size-forBtnGoogle">
-                            <button class="btnGoogle">
+                            <button class="btnGoogle" type="submit">
                                 <img src="../assets/Google.png" alt="">
                                 Sign in with Google
                             </button>
@@ -53,7 +54,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </tr>
                     <tr>
                         <th class="newAccount">
-                            <p>Don’t have an account? <a href="" style="color: #5429FF">Sign up</a></p>
+                            <p>Don’t have an account? <a href="#" style="color: #5429FF">Sign up</a></p>
                         </th>
                     </tr>
                 </table>
@@ -67,6 +68,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <img src="../assets/DRIP_20.png" alt="">
     </div>
 </main>
+
 </body>
 </html>
 `
