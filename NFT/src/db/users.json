@@ -1,10 +1,16 @@
-[
-  {
-    "username": "ivan@ehu.lt",
-    "password": "123123"
-  },
-  {
-    "email": "marya@ehu.lt",
-    "password": "asdqwe"
-  }
-]
+{
+  "Users": [
+    {
+      "username": "ivan@ehu.lt",
+      "password": "123123"
+    },
+    {
+      "email": "marya@ehu.lt",
+      "password": "asdqwe"
+    },
+    {
+      "email": "artiomharminovich05@gmail.com",
+      "password": "qwerty"
+    }
+  ]
+}

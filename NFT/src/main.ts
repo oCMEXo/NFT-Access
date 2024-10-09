@@ -1,13 +1,14 @@
 import './style.css'
+import {setupButton} from "./settings.ts";
 import { setupCounter } from './counter.ts'
-import './settings.ts'
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>NFT-Assets</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +23,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <h1>NFT Access</h1>
                 <p>Please fill your detail to access your account.</p>
             </div>
-            <form id="loginForm" action="" method="get">
+            <form id="loginForm" method="get">
                 <table>
                     <tr>
                         <th><label for="email">Email</label></th>
@@ -30,7 +31,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </tr>
                     <tr class="secondLineTable">
                         <th><label for="password">Password</label></th>
-                        <th><input type="password" name="password" id="password" placeholder="••••••••"></th>
+                        <th><input type="password" name="password" id="password" ></th>
                     </tr>
                     <tr class="checkBoxLine">
                         <th class="rememberMe">
@@ -41,12 +42,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </tr>
                     <tr class="btn">
                         <th>
-                            <button type="button" id="singup-sumbmit">Sing in</button>
+                            <button  type="submit" id="singSubmit">Sign in</button>
                         </th>
                     </tr>
                     <tr class="btnGoogles">
                         <th class="size-forBtnGoogle">
-                            <button class="btnGoogle" type="submit">
+                            <button id='btnGoogles' class="btnGoogle" type="submit">
                                 <img src="../assets/Google.png" alt="">
                                 Sign in with Google
                             </button>
@@ -65,12 +66,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </div>
     </div>
     <div class="image">
-        <img src="../assets/DRIP_20.png" alt="">
+        <img src="../assets/DRIP_20.png" alt="error">
     </div>
 </main>
-
 </body>
 </html>
 `
+setupButton()
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
