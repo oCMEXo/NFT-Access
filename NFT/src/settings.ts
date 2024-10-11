@@ -1,7 +1,6 @@
 import Users from './db/users.json'
 
-
-export function setupButton() {
+export function setTimeout() {
     document.getElementById('loginForm')!.addEventListener('submit', function (event: Event) {
         const inputs = document.querySelectorAll('input');
         let allValid = true;
@@ -51,12 +50,12 @@ export function setupButton() {
         const isValid = postUser(email, password);
 
         if (isValid) {
-            // alert('Вход успешно совершен');
-            console.error({code: 200, data: 'Success'})
+            alert('Вход успешно совершен');
+            console.log({code: 200, data: 'Success'})
 
         } else {
-            // alert('Ошибка в вводе данных')
-            console.log({code: 401, data: 'Invalid email or password'});
+            alert('Ошибка в вводе данных')
+            console.error({code: 401, data: 'Invalid email or password'});
 
         }
     });

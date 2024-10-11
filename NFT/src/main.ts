@@ -1,5 +1,5 @@
 import './style.css'
-import {setupButton} from "./settings.ts";
+import {setTimeout} from "./settings.ts";
 import { setupCounter } from './counter.ts'
 
 
@@ -42,7 +42,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </tr>
                     <tr class="btn">
                         <th>
-                            <button  type="submit" id="singSubmit">Sign in</button>
+                            <button  type="submit" id="signSubmit">Sign in</button>
                         </th>
                     </tr>
                     <tr class="btnGoogles">
@@ -72,6 +72,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 </body>
 </html>
 `
-setupButton()
+setTimeout()
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
