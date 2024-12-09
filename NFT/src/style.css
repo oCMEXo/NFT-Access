@@ -77,6 +77,11 @@ main {
   }
 }
 
+
+input:invalid {
+  border: 2px solid red;
+}
+
 table {
   display: flex;
   align-items: start;

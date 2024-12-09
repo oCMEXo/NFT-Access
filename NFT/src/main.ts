@@ -42,12 +42,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </tr>
                     <tr class="btn">
                         <th>
-                            <button  type="submit" id="signSubmit">Sign in</button>
+                            <button style="cursor: pointer" type="submit" id="signSubmit">Sign in</button>
                         </th>
                     </tr>
                     <tr class="btnGoogles">
                         <th class="size-forBtnGoogle">
-                            <button id='btnGoogles' class="btnGoogle" type="submit">
+                            <button style="cursor: pointer" id='btnGoogles' class="btnGoogle" type="submit">
                                 <img src="../assets/Google.png" alt="">
                                 Sign in with Google
                             </button>

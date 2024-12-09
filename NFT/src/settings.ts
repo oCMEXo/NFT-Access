@@ -1,21 +1,21 @@
 import Users from './db/users.json'
 
 export function setTimeout() {
-    document.getElementById('loginForm')!.addEventListener('submit', function (event: Event) {
-        const inputs = document.querySelectorAll('input');
-        let allValid = true;
-
-        inputs.forEach((input: HTMLInputElement) => {
-            if (!input.value.trim()) {
-                input.style.borderColor = 'red';
-                allValid = false;
-            }
-        });
-
-        if (!allValid) {
-            event.preventDefault();
-        }
-    });
+    // document.getElementById('loginForm')!.addEventListener('submit', function (event: Event) {
+    //     const inputs = document.querySelectorAll('input');
+    //     let allValid = true;
+    //
+    //     inputs.forEach((input: HTMLInputElement) => {
+    //         if (!input.value.trim()) {
+    //             input.style.borderColor = 'red';
+    //             allValid = false;
+    //         }
+    //     });
+    //
+    //     if (!allValid) {
+    //         event.preventDefault();
+    //     }
+    // });
 
     function postUser(email: string, password: string): boolean {
         interface User {
