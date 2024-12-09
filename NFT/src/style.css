@@ -4,11 +4,26 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-
 }
 
 :root {
-  --width-progect: 1440px;
+  --width-progect: 90rem;
+}
+
+@media (width < 90rem) {
+  :root {
+    --width-progect: 40rem;
+  }
+  .image {
+    display: none;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    width: 60rem;
+  }
 }
 
 body {
@@ -16,26 +31,24 @@ body {
   background-color: black;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 main {
   display: inline-flex;
-  border-radius: 44px;
+  border-radius: 2.75em;
   background-color: white;
   justify-content: space-between;
   width: var(--width-progect);
-  padding: 30px 40px 30px 40px;
+  padding: 1.875rem 2.5rem 1.875rem 2.5rem;
 }
-
-
 .label {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 
   p {
     color: #000;
-    font-size: 16px;
     font-weight: 500;
   }
 }
@@ -43,26 +56,24 @@ main {
 .nftAccess {
   display: inline-flex;
   flex-direction: column;
-  gap: 56px;
-  padding-top: 150px;
-  margin-left: 140px;
-
+  gap: 3.5rem;
+  padding-top: 9.375rem;
+  margin-left: 8.75rem;
 }
 
 .infoContent {
-
   h1 {
     color: #344054;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    padding-bottom: 5px;
+    padding-bottom: 0.313rem;
   }
 
   p {
     color: #667085;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 1.5rem; /* 150% */
   }
 }
 
@@ -75,31 +86,32 @@ tr {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 label {
   color: #344054;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 input[type=email],
 input[type=password] {
-  padding: 10px 14px;
-  width: 330px;
+  padding: 0.625rem 0.875rem;
+  width: 20.625rem;
   /*color: #667085;*/
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
-  border-radius: 8px;
-  border: 1px solid #D0D5DD;
-
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.063rem solid #D0D5DD;
 }
 
-.secondLineTable, .checkBoxLine, .btnGoogles {
-  padding-top: 20px;
+.secondLineTable,
+.checkBoxLine,
+.btnGoogles {
+  padding-top: 1.25rem;
 }
 
 .checkBoxLine {
@@ -110,39 +122,37 @@ input[type=password] {
 
 a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 20px; /* 142.857% */
+  line-height: 1.25rem; /* 142.857% */
 }
 
 .rememberMe {
   display: flex;
   align-content: center;
   align-items: center;
-  gap: 8px;
-
+  gap: 0.5rem;
 }
 
 input[type=checkbox] {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
 }
-
 
 .btn {
   width: 100%;
-  margin-top: 36px;
-  /*gap: 10px;*/
+  margin-top: 2.25rem;
+  /*gap: 0.625rem;*/
 
   button {
-    padding: 12px 154px;
+    padding: 0.75rem 9.625rem;
     background-color: #5429FF;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     color: #FFF;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
   }
 }
 
@@ -152,14 +162,14 @@ input[type=checkbox] {
 
 .btnGoogle {
   display: inline-flex;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
-  padding: 10px 90px;
-  border: 1px solid #D0D5DD;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 0.625rem 5.625rem;
+  border: 0.063rem solid #D0D5DD;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.25rem;
   background-color: #FFF;
 }
 
@@ -167,29 +177,29 @@ input[type=checkbox] {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   p {
-    color:  #344054;
+    color: #344054;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
 }
 
 .footer {
-  padding-top: 160px;
+  padding-top: 10rem;
   color: #667085;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 400;
-  line-height: 20px; /* 125% */
+  line-height: 1.25rem;
 }
 
 .image {
-  border-radius: 40px;
-  width: 736px;
-  height: 865px;
+  border-radius: 2.5rem;
+  width: 46rem;
+  height: 54.0625rem;
   background-color: #CBCCE8;
 }
